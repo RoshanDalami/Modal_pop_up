@@ -1,0 +1,17 @@
+.button{
+  margin: 20px;
+}
+.btn1{
+  position: relative;
+  color:#fff;
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  background:  #CD104D;
+ border: none;
+
+ text-transform:uppercase;
+ font-weight: 700;
+ overflow: hidden;
+ 
+}

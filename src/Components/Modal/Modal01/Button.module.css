@@ -1,0 +1,38 @@
+.button{
+  margin: 20px;
+}
+.btn1{
+  position: relative;
+  color:#000;
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  background: none;
+  border: 1px black solid;
+  border-radius: 12px;
+ text-transform:uppercase;
+ font-weight: 700;
+ overflow: hidden;
+ transition: transform 200ms ease-in-out;
+ transition: color 200ms ease-in-out;
+  z-index: 1;
+}
+.btn1::before{
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: #CD104D;
+  border-radius: 12px;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.btn1:hover::before,.btn1:focus::before,.btn1:hover,.btn1:focus{
+transform: scaleX(1);
+color: white;
+border: 0;
+}
